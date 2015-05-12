@@ -14,6 +14,7 @@
 		9C9602C61B02282300C5CCDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9602C51B02282300C5CCDD /* Images.xcassets */; };
 		9C9602C91B02282300C5CCDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9602C71B02282300C5CCDD /* LaunchScreen.xib */; };
 		9C9602D51B02282300C5CCDD /* LocalAuthenticationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9602D41B02282300C5CCDD /* LocalAuthenticationTests.m */; };
+		9C9602DF1B02286E00C5CCDD /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9602DE1B02286E00C5CCDD /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		9C9602CE1B02282300C5CCDD /* LocalAuthenticationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalAuthenticationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C9602D31B02282300C5CCDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C9602D41B02282300C5CCDD /* LocalAuthenticationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalAuthenticationTests.m; sourceTree = "<group>"; };
+		9C9602DE1B02286E00C5CCDD /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9602DF1B02286E00C5CCDD /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,13 +84,11 @@
 		9C9602B71B02282200C5CCDD /* LocalAuthentication */ = {
 			isa = PBXGroup;
 			children = (
-				9C9602BC1B02282200C5CCDD /* AppDelegate.h */,
-				9C9602BD1B02282200C5CCDD /* AppDelegate.m */,
-				9C9602BF1B02282200C5CCDD /* ViewController.h */,
-				9C9602C01B02282200C5CCDD /* ViewController.m */,
-				9C9602C21B02282300C5CCDD /* Main.storyboard */,
-				9C9602C51B02282300C5CCDD /* Images.xcassets */,
-				9C9602C71B02282300C5CCDD /* LaunchScreen.xib */,
+				9C9602E41B0228C400C5CCDD /* Images */,
+				9C9602E31B0228B300C5CCDD /* Controllers */,
+				9C9602E21B02289500C5CCDD /* User Interface */,
+				9C9602E11B02288700C5CCDD /* Root */,
+				9C9602E01B02287700C5CCDD /* Frameworks */,
 				9C9602B81B02282200C5CCDD /* Supporting Files */,
 			);
 			path = LocalAuthentication;
@@ -117,6 +118,49 @@
 				9C9602D31B02282300C5CCDD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C9602E01B02287700C5CCDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C9602DE1B02286E00C5CCDD /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C9602E11B02288700C5CCDD /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9C9602BC1B02282200C5CCDD /* AppDelegate.h */,
+				9C9602BD1B02282200C5CCDD /* AppDelegate.m */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		9C9602E21B02289500C5CCDD /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				9C9602C21B02282300C5CCDD /* Main.storyboard */,
+				9C9602C71B02282300C5CCDD /* LaunchScreen.xib */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		9C9602E31B0228B300C5CCDD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C9602BF1B02282200C5CCDD /* ViewController.h */,
+				9C9602C01B02282200C5CCDD /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9C9602E41B0228C400C5CCDD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9C9602C51B02282300C5CCDD /* Images.xcassets */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
